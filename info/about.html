@@ -59,7 +59,7 @@
         <div class="grid md:grid-cols-2 gap-12 items-center">
             <!-- Profile Image -->
             <div class="flex justify-center">
-                <img src="assets/images/profile-placeholder.png" alt="Profile photo" class="rounded-xl shadow-lg max-w-xs">
+                <img src="https://placehold.co/600x400/D1D5DB/1F2937?text=Profile+Picture" alt="Profile photo" class="rounded-xl shadow-lg max-w-xs">
             </div>
 
             <!-- Bio -->
@@ -92,54 +92,112 @@
               <span class="px-4 py-2 bg-gray-200 text-gray-800 rounded-full">Git</span>
             </div>
           </section>
+<!-- Career Timeline -->
+<section class="container mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-center mb-10">Career Timeline</h2>
+  
+    <!-- Carousel Wrapper -->
+    <div id="timeline-carousel" class="relative w-full max-w-xl mx-auto">
+      <!-- Previews -->
+      <div class="timeline-preview bg-white shadow-lg rounded-xl p-6 cursor-pointer" data-index="0">
+        <h3 class="text-xl font-semibold">Data Engineer</h3>
+        <p class="text-sm text-gray-500">Tech Company • Jan 2022 – Present</p>
+        <p class="mt-2 text-gray-600">Built data pipelines, optimized workflows...</p>
+      </div>
+  
+      <div class="timeline-preview bg-white shadow-lg rounded-xl p-6 cursor-pointer hidden" data-index="1">
+        <h3 class="text-xl font-semibold">IT Support Specialist</h3>
+        <p class="text-sm text-gray-500">Another Company • Aug 2019 – Dec 2021</p>
+        <p class="mt-2 text-gray-600">Managed tickets, automated tasks...</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Modal -->
+  <div id="timeline-modal" class="fixed inset-0 bg-black bg-opacity-70 hidden flex items-center justify-center z-50">
+    <div class="bg-white rounded-xl shadow-lg max-w-lg w-full p-6 relative">
+      <!-- Close -->
+      <button id="close-modal" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+  
+      <!-- Cards inside modal -->
+      <div id="modal-cards">
+        <!-- Card 1 -->
+        <div class="modal-card">
+          <h3 class="text-2xl font-bold">Data Engineer</h3>
+          <p class="text-sm text-gray-500">Tech Company • Jan 2022 – Present</p>
+          <ul class="list-disc list-inside mt-4 space-y-2">
+            <li>Built ETL pipelines processing millions of records daily</li>
+            <li>Optimized workflows, reducing latency by 30%</li>
+            <li>Collaborated with analysts to deliver dashboards</li>
+          </ul>
+        </div>
+  
+        <!-- Card 2 -->
+        <div class="modal-card hidden">
+          <h3 class="text-2xl font-bold">IT Support Specialist</h3>
+          <p class="text-sm text-gray-500">Another Company • Aug 2019 – Dec 2021</p>
+          <ul class="list-disc list-inside mt-4 space-y-2">
+            <li>Reduced ticket backlog by 40%</li>
+            <li>Automated repetitive tasks with scripts</li>
+            <li>Trained staff on IT best practices</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Navigation -->
+      <div class="flex justify-between items-center mt-6">
+        <button id="prev-modal" class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">◀</button>
+        <button id="next-modal" class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">▶</button>
+      </div>
+    </div>
+  </div>
 
-        <!-- Career timeline -->
-        <section class="container mx-auto px-6 py-16">
-            <h2 class="text-3xl font-bold text-center mb-10">My Experience</h2>
-
-            <div class="relative max-w-2xl mx-auto">
-                <!-- Card container -->
-                <div id="timeline-cards" class="overflow-hidden relative">
-                    <!-- Card 1 -->
-                    <div class="timeline-card bg-white shadow-lg rounded-xl p-6 text-gray-700">
-                        <h3 class="text-xl font-semibold">Data Engineer</h3>
-                        <p class="text-sm text-gray-500">Tech Company • Jan 2022 – Present</p>
-                        <ul class="list-disc list-inside mt-4 space-y-2">
-                          <li>Built ETL pipelines processing millions of records daily</li>
-                          <li>Optimized data workflows reducing latency by 30%</li>
-                          <li>Collaborated with analysts to deliver dashboards</li>
-                        </ul>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="timeline-card bg-white shadow-lg rounded-xl p-6 text-gray-700 hidden">
-                        <h3 class="text-xl font-semibold">IT Support</h3>
-                        <p class="text-sm text-gray-500">Another Company • Aug 2019 – Dec 2021</p>
-                        <ul class="list-disc list-inside mt-4 space-y-2">
-                            <li>Managed helpdesk requests and reduced ticket backlog by 40%</li>
-                            <li>Automated repetitive tasks with scripts</li>
-                            <li>Provided training to staff on IT best practices</li>
-                          </ul>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="timeline-card bg-white shadow-lg rounded-xl p-6 text-gray-700 hidden">
-                        <h3 class="text-xl font-semibold">IT Support</h3>
-                        <p class="text-sm text-gray-500">Another Company • Aug 2019 – Dec 2021</p>
-                        <ul class="list-disc list-inside mt-4 space-y-2">
-                            <li>Managed helpdesk requests and reduced ticket backlog by 40%</li>
-                            <li>Automated repetitive tasks with scripts</li>
-                            <li>Provided training to staff on IT best practices</li>
-                          </ul>
-                    </div>
-                </div>
-                <!-- Navigation -->
-                <div class="flex justify-between items-center mt-6">
-                    <button id="prev-card" class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">◀</button>
-                    <button id="next-card" class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">▶</button>
-                </div>
-            </div>
-        </section>
+  <!-- Certificates Section -->
+<section class="container mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold mb-8 text-center">Certificates</h2>
+  
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Certificate Card -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-6 cursor-pointer cert-card" data-cert="1">
+        <img src="https://placehold.co/600x400/D1D5DB/1F2937?text=Certificate+Screenshot" alt="Certificate Logo" class="h-12 mb-4">
+        <h3 class="text-xl font-semibold mb-2">Google Data Analytics</h3>
+        <p class="text-sm text-gray-600">Coursera | Issued 2023</p>
+        <a href="#" target="_blank" class="text-blue-600 hover:underline">View Certificate</a>
+      </div>
+  
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-6 cursor-pointer cert-card" data-cert="2">
+        <img src="https://placehold.co/600x400/D1D5DB/1F2937?text=Certificate+Screenshot" alt="Certificate Logo" class="h-12 mb-4">
+        <h3 class="text-xl font-semibold mb-2">AWS Cloud Practitioner</h3>
+        <p class="text-sm text-gray-600">AWS | Issued 2022</p>
+        <a href="#" target="_blank" class="text-blue-600 hover:underline">View Certificate</a>
+      </div>
+  
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-6 cursor-pointer cert-card" data-cert="3">
+        <img src="https://placehold.co/600x400/D1D5DB/1F2937?text=Certificate+Screenshot" alt="Certificate Logo" class="h-12 mb-4">
+        <h3 class="text-xl font-semibold mb-2">Microsoft Power BI</h3>
+        <p class="text-sm text-gray-600">Microsoft | Issued 2021</p>
+        <a href="#" target="_blank" class="text-blue-600 hover:underline">View Certificate</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Modal -->
+  <div id="cert-modal" class="hidden fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-50">
+    <div class="bg-white rounded-lg shadow-lg max-w-lg w-full p-6 relative">
+      <!-- Close button -->
+      <button id="cert-modal-close" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
+      
+      <!-- Certificate Preview -->
+      <img id="cert-modal-img" src="" alt="Certificate Image" class="rounded mb-4 max-h-80 mx-auto">
+      <h3 id="cert-modal-title" class="text-xl font-bold mb-2"></h3>
+      <p id="cert-modal-issuer" class="text-sm text-gray-600 mb-4"></p>
+      <a id="cert-modal-link" href="#" target="_blank" class="text-blue-600 hover:underline">View on Issuer’s Site</a>
+    </div>
+  </div>
+  
+  
+  
+  
     </main>
 
     <!-- Contact -->
