@@ -93,7 +93,53 @@
             </div>
           </section>
 
-          
+        <!-- Career timeline -->
+        <section class="container mx-auto px-6 py-16">
+            <h2 class="text-3xl font-bold text-center mb-10">My Experience</h2>
+
+            <div class="relative max-w-2xl mx-auto">
+                <!-- Card container -->
+                <div id="timeline-cards" class="overflow-hidden relative">
+                    <!-- Card 1 -->
+                    <div class="timeline-card bg-white shadow-lg rounded-xl p-6 text-gray-700">
+                        <h3 class="text-xl font-semibold">Data Engineer</h3>
+                        <p class="text-sm text-gray-500">Tech Company • Jan 2022 – Present</p>
+                        <ul class="list-disc list-inside mt-4 space-y-2">
+                          <li>Built ETL pipelines processing millions of records daily</li>
+                          <li>Optimized data workflows reducing latency by 30%</li>
+                          <li>Collaborated with analysts to deliver dashboards</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="timeline-card bg-white shadow-lg rounded-xl p-6 text-gray-700 hidden">
+                        <h3 class="text-xl font-semibold">IT Support</h3>
+                        <p class="text-sm text-gray-500">Another Company • Aug 2019 – Dec 2021</p>
+                        <ul class="list-disc list-inside mt-4 space-y-2">
+                            <li>Managed helpdesk requests and reduced ticket backlog by 40%</li>
+                            <li>Automated repetitive tasks with scripts</li>
+                            <li>Provided training to staff on IT best practices</li>
+                          </ul>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="timeline-card bg-white shadow-lg rounded-xl p-6 text-gray-700 hidden">
+                        <h3 class="text-xl font-semibold">IT Support</h3>
+                        <p class="text-sm text-gray-500">Another Company • Aug 2019 – Dec 2021</p>
+                        <ul class="list-disc list-inside mt-4 space-y-2">
+                            <li>Managed helpdesk requests and reduced ticket backlog by 40%</li>
+                            <li>Automated repetitive tasks with scripts</li>
+                            <li>Provided training to staff on IT best practices</li>
+                          </ul>
+                    </div>
+                </div>
+                <!-- Navigation -->
+                <div class="flex justify-between items-center mt-6">
+                    <button id="prev-card" class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">◀</button>
+                    <button id="next-card" class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">▶</button>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Contact -->
