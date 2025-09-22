@@ -1,0 +1,66 @@
+/* Add about page css */
+
+/* About Page Specific Styles */
+
+/* Ensure consistent font family with homepage */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Smooth section fade-in */
+main {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Profile image hover effect */
+img[alt="Profile photo"] {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+img[alt="Profile photo"]:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+/* About text tweaks */
+main p {
+    line-height: 1.75;
+}
+
+/* Call-to-action button enhancement */
+a.bg-blue-600 {
+    transition: all 0.3s ease;
+}
+a.bg-blue-600:hover {
+    transform: translateY(-2px);
+}
+
+/* Navbar consistency with homepage */
+nav a {
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+/* Card hover effects consistency with homepage */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer consistency with homepage */
+footer {
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+  
