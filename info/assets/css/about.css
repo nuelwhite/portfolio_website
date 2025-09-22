@@ -86,4 +86,33 @@ section div span {
     opacity: 0;
     transform: translateX(50px);
   }
+
+/* Modal animations */
+#timeline-modal {
+    animation: fadeIn 0.3s ease;
+  }
+  .modal-card {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  .modal-card:not(.hidden) {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .modal-card.hidden {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  #timeline-modal{
+    transition: none;
+    animation: none;
+  }
+  /* Certificates hover effect */
+section .bg-white {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  section .bg-white:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+  }
+
   
