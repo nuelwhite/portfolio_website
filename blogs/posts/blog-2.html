@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn how to use chunked reading in Pandas to optimize memory usage when handling large datasets.">
+  <title>Memory-Efficient Data Loading in Pandas</title>
+  <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/blogs.css">
+</head>
+<body class="bg-gray-50 text-gray-500">
+  <!-- Header -->
+  <header class="bg-white shadow fixed w-full z-10">
+    <div class="container mx-auto flex justify-between items-center py-4 py-6">
+      <h1 class="text-2xl font-bold">Emmanuel Agu-White Narhteh</h1>
+      <nav class="hidden md:flex space-x-6">
+        <a href="../../index.html" class="hover:text-blue-600">Home</a>
+        <a href="../../info/about.html" class="hover:text-blue-600">About</a>
+        <a href="../../projects/index.html" class="hover:text-blue-600">Projects</a>
+        <a href="../index.html" class="hover:text-blue-600">Blogs</a>
+        <a href="../../info/contact.html" class="hover:text-blue-600">Contact</a>
+        <a href="../../assets/Emmanuel_Agu-White_resume.pdf" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Resume</a>
+      </nav>
+      
+      <!-- menu button -->
+      <button id="menu-btn" class="md:hidden focus:outline-none" aria-label="Open menu">☰</button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow">
+      <nav class="flex flex-col p-4 space-y-2">
+        <a href="../../index.html" class="hover:text-blue-600">Home</a>
+        <a href="../../info/about.html" class="hover:text-blue-600">About</a>
+        <a href="../../projects/index.html" class="hover:text-blue-600">Projects</a>
+        <a href="../index.html" class="hover:text-blue-600">Blogs</a>
+        <a href="../../info/contact.html" class="hover:text-blue-600">Contact</a>
+        <a href="../../assets/Emmanuel_Agu-White_resume.pdf" target="_blank" class="hover:text-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Blog Content -->
+  <main class="container mx-auto px-6 pt-32 pb-16 max-w-3xl flex-grow">
+    <article>
+      <h2 class="text-3xl font-bold mb-4">Memory-Efficient Data Loading in Pandas</h2>
+      <p class="text-sm text-gray-500 mb-8">August 2025 • Data Analytics</p>
+
+      <p class="mb-4">When working with large datasets in Pandas, memory usage can quickly become a bottleneck. One effective approach is to use <strong>chunked reading</strong>, which allows you to load data in smaller, more manageable pieces.</p>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-3">Why Chunked Reading?</h3>
+      <p class="mb-4">Chunked reading prevents your machine from being overwhelmed by loading an entire dataset into memory at once. Instead, you can process each chunk, aggregate results, and keep memory usage under control.</p>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-3">Practical Example</h3>
+      <p class="mb-4">Imagine working with a 5GB CSV file. Instead of loading it directly, you can load 100,000 rows at a time, perform transformations, and append the results. This method is both <strong>efficient</strong> and <strong>scalable</strong>.</p>
+
+      <blockquote class="border-l-4 border-blue-600 pl-4 italic text-gray-700 mb-6">
+        “Efficiency isn’t about doing more things—it’s about doing the right things with fewer resources.”
+      </blockquote>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-3">Conclusion</h3>
+      <p class="mb-6">By applying chunked reading, you can work on very large datasets without needing massive amounts of RAM. It’s a practical way to showcase optimization and scalability in your data projects.</p>
+
+      <a href="../index.html" class="text-blue-600 hover:underline">← Back to Blogs</a>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 text-center py-6">
+    <p>&copy; <span id="year"></span> Emmanuel Agu-White. All rights reserved.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

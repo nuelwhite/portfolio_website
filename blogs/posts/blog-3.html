@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Handy SQL tricks for data analysts — from window functions to query optimization.">
+  <title>SQL Tips for Analysts</title>
+  <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/blogs.css">
+</head>
+<body class="bg-gray-50 text-gray-500">
+  <!-- Header -->
+  <header class="bg-white shadow fixed w-full z-10">
+    <div class="container mx-auto flex justify-between items-center py-4 py-6">
+      <h1 class="text-2xl font-bold">Emmanuel Agu-White Narhteh</h1>
+      <nav class="hidden md:flex space-x-6">
+        <a href="../../index.html" class="hover:text-blue-600">Home</a>
+        <a href="../../info/about.html" class="hover:text-blue-600">About</a>
+        <a href="../../projects/index.html" class="hover:text-blue-600">Projects</a>
+        <a href="../index.html" class="hover:text-blue-600">Blogs</a>
+        <a href="../../info/contact.html" class="hover:text-blue-600">Contact</a>
+        <a href="../../assets/Emmanuel_Agu-White_resume.pdf" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Resume</a>
+      </nav>
+      
+      <!-- menu button -->
+      <button id="menu-btn" class="md:hidden focus:outline-none" aria-label="Open menu">☰</button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow">
+      <nav class="flex flex-col p-4 space-y-2">
+        <a href="../../index.html" class="hover:text-blue-600">Home</a>
+        <a href="../../info/about.html" class="hover:text-blue-600">About</a>
+        <a href="../../projects/index.html" class="hover:text-blue-600">Projects</a>
+        <a href="../index.html" class="hover:text-blue-600">Blogs</a>
+        <a href="../../info/contact.html" class="hover:text-blue-600">Contact</a>
+        <a href="../../assets/Emmanuel_Agu-White_resume.pdf" target="_blank" class="hover:text-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Blog Content -->
+  <main class="container mx-auto px-6 pt-32 pb-16 max-w-3xl flex-grow">
+    <article>
+      <h2 class="text-3xl font-bold mb-4">SQL Tips for Analysts</h2>
+      <p class="text-sm text-gray-500 mb-8">July 2025 • SQL</p>
+
+      <p class="mb-4">SQL remains one of the most valuable skills for data analysts. Beyond simple SELECT statements, there are a variety of techniques that can significantly improve both performance and insights.</p>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-3">Use Window Functions</h3>
+      <p class="mb-4">Window functions like <code>ROW_NUMBER()</code>, <code>RANK()</code>, and <code>OVER()</code> allow you to analyze data across partitions without collapsing rows. This is extremely useful for time-series or ranking problems.</p>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-3">Optimize Queries</h3>
+      <p class="mb-4">Always check execution plans and avoid unnecessary subqueries. Using indexes wisely can reduce query times from minutes to seconds.</p>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-3">Practical Example</h3>
+      <p class="mb-6">Suppose you need to get the top 3 products sold per region. Using a window function with <code>ROW_NUMBER()</code> makes this straightforward, compared to complex joins and nested queries.</p>
+
+      <blockquote class="border-l-4 border-blue-600 pl-4 italic text-gray-700 mb-6">
+        “The right SQL query can turn noise into knowledge.”
+      </blockquote>
+
+      <a href="../index.html" class="text-blue-600 hover:underline">← Back to Blogs</a>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 text-center py-6">
+    <p>&copy; <span id="year"></span> Emmanuel Agu-White. All rights reserved.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

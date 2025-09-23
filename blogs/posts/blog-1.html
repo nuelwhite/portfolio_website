@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Getting Started with Spark RDDs - A beginner-friendly introduction by Emmanuel Agu-White Narhteh">
+    <meta property="og:title" content="Getting Started with Spark RDDs - Emmanuel Agu-White Narhteh">
+    <meta property="og:description" content="Beginner-friendly guide to Spark’s Resilient Distributed Datasets (RDDs) with examples and use cases.">
+    <meta property="og:image" content="../../assets/images/og-image.png">
+    <meta property="og:type" content="article">
+
+    <title>Getting Started with Spark RDDs | Emmanuel Agu-White Narhteh</title>
+    <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/blogs.css">
+</head>
+<body class="bg-gray-50 text-gray-500">
+    
+    <!-- Navigation bar -->
+    <header class="bg-white shadow fixed w-full z-10">
+        <div class="container mx-auto flex justify-between items-center py-4 py-6">
+            <h1 class="text-2xl font-bold">Emmanuel Agu-White Narhteh</h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="../../index.html" class="hover:text-blue-600">Home</a>
+                <a href="../../info/about.html" class="hover:text-blue-600">About</a>
+                <a href="../../projects/index.html" class="hover:text-blue-600">Projects</a>
+                <a href="../index.html" class="text-blue-600 font-semibold">Blogs</a>
+                <a href="../../info/contact.html" class="hover:text-blue-600">Contact</a>
+                <a href="../../assets/Emmanuel_Agu-White_resume.pdf" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Resume</a>
+            </nav>
+
+            <!-- mobile menu button -->
+            <button id="menu-btn" class="md:hidden focus:outline-none" aria-label="Open menu">☰</button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow">
+            <nav class="flex flex-col p-4 space-y-2">
+                <a href="../../index.html" class="hover:text-blue-600">Home</a>
+                <a href="../../info/about.html" class="hover:text-blue-600">About</a>
+                <a href="../../projects/index.html" class="hover:text-blue-600">Projects</a>
+                <a href="../index.html" class="text-blue-600 font-semibold">Blogs</a>
+                <a href="../../info/contact.html" class="hover:text-blue-600">Contact</a>
+                <a href="../../assets/Emmanuel_Agu-White_resume.pdf" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Resume</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Blog post content -->
+    <main class="container mx-auto px-6 pt-32 pb-16 max-w-3xl flex-grow">
+        <article class="bg-white rounded-lg shadow p-8">
+            <header class="mb-8">
+                <h2 class="text-3xl font-bold mb-3">Getting Started with Spark RDDs</h2>
+                <p class="text-sm text-gray-500">September 2025 • <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs">Data Engineering</span></p>
+            </header>
+
+            <section class="prose max-w-none">
+                <p>
+                    Spark’s <strong>RDD (Resilient Distributed Dataset)</strong> is the fundamental building block of distributed processing. 
+                    It is an immutable, fault-tolerant collection of elements that can be operated on in parallel.
+                </p>
+
+                <h3>Why RDDs Matter</h3>
+                <ul>
+                    <li><strong>Resilient:</strong> If a node fails, Spark can recompute lost data using lineage.</li>
+                    <li><strong>Distributed:</strong> Data is spread across the cluster for parallelism.</li>
+                    <li><strong>Immutable:</strong> Once created, RDDs cannot be changed, ensuring consistency.</li>
+                </ul>
+
+                <h3>Example Use Case</h3>
+                <p>
+                    Imagine you have a large log file (several GBs). You can load it into an RDD, 
+                    split it across workers, and run operations like filtering or counting errors in parallel.
+                </p>
+
+                <h3>Next Steps</h3>
+                <p>
+                    After mastering RDDs, most engineers move to <strong>DataFrames</strong> and <strong>Datasets</strong>, 
+                    which provide optimizations and easier APIs. Still, understanding RDDs builds a strong Spark foundation.
+                </p>
+            </section>
+
+            <footer class="mt-10 border-t pt-6 text-sm text-gray-500">
+                <p>Written by Emmanuel Agu-White Narhteh</p>
+                <a href="../index.html" class="text-blue-600 hover:underline">← Back to Blogs</a>
+            </footer>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 text-center py-6">
+        <p>
+            &copy; <span id="year"></span> Emmanuel Agu-White. All rights reserved.
+        </p>
+    </footer>
+
+    <!-- scripts -->
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>
