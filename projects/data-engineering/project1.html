@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ETL Data Pipeline with Spark & PostgreSQL - Data Engineering project by Emmanuel Agu-White Narhteh">
+    <meta property="og:title" content="ETL Data Pipeline with Spark & PostgreSQL - Emmanuel Agu-White Narhteh">
+    <meta property="og:description" content="Building a scalable pipeline for transforming and loading large datasets using Apache Spark and PostgreSQL">
+    <meta property="og:image" content="../../assets/images/og-image.png">
+    <meta property="og:type" content="article">
+
+    <title>ETL Data Pipeline with Spark & PostgreSQL | Emmanuel Agu-White Narhteh</title>
+    <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-500">
+
+  <!-- Header -->
+  <header class="bg-white shadow fixed w-full z-10">
+    <div class="container mx-auto flex justify-between items-center py-4 py-6">
+      <h1 class="text-2xl font-bold">Emmanuel Agu-White Narhteh</h1>
+      <nav class="hidden md:flex space-x-6">
+        <a href="../../index.html" class="hover:text-blue-600">Home</a>
+        <a href="../../info/about.html" class="hover:text-blue-600">About</a>
+        <a href="../index.html" class="hover:text-blue-600">Projects</a>
+        <a href="../../blogs/index.html" class="hover:text-blue-600">Blogs</a>
+        <a href="../../info/contact.html" class="hover:text-blue-600">Contact</a>
+        <a href="../../assets/Emmanuel_Agu-White_resume.pdf" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Resume</a>
+      </nav>
+      
+      <!-- menu button -->
+      <button id="menu-btn" class="md:hidden focus:outline-none" aria-label="Open menu">☰</button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow">
+      <nav class="flex flex-col p-4 space-y-2">
+        <a href="../../index.html" class="hover:text-blue-600">Home</a>
+        <a href="../../info/about.html" class="hover:text-blue-600">About</a>
+        <a href="../index.html" class="hover:text-blue-600">Projects</a>
+        <a href="../../blogs/index.html" class="hover:text-blue-600">Blogs</a>
+        <a href="../../info/contact.html" class="hover:text-blue-600">Contact</a>
+        <a href="../../assets/Emmanuel_Agu-White_resume.pdf" target="_blank" class="hover:text-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-6 pt-32 pb-16 flex-grow">
+    <!-- Hero -->
+    <section class="text-center mb-12">
+      <h2 class="text-3xl font-bold mb-2">ETL Data Pipeline with Spark & PostgreSQL</h2>
+      <p class="text-gray-600 mb-4">Building a scalable pipeline for transforming and loading large datasets.</p>
+      <img src="https://placehold.co/800x400?text=Pipeline+Architecture" 
+           alt="Pipeline Diagram" class="rounded shadow mx-auto">
+    </section>
+
+    <!-- Overview -->
+    <section class="mb-12">
+      <h3 class="text-2xl font-semibold mb-4">Overview</h3>
+      <p>
+        This project demonstrates how to design and implement an end-to-end ETL data pipeline 
+        using Apache Spark for processing and PostgreSQL for storage.
+      </p>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="mb-12">
+      <h3 class="text-2xl font-semibold mb-4">Tech Stack</h3>
+      <ul class="list-disc ml-6">
+        <li>Apache Spark</li>
+        <li>Docker</li>
+        <li>PostgreSQL</li>
+        <li>Python</li>
+      </ul>
+    </section>
+
+    <!-- Implementation -->
+    <section class="mb-12">
+      <h3 class="text-2xl font-semibold mb-4">Implementation</h3>
+      <p>Step 1: Data ingestion from CSV files into Spark.</p>
+      <p>Step 2: Data transformations with Spark SQL.</p>
+      <p>Step 3: Data loading into PostgreSQL using JDBC.</p>
+    </section>
+
+    <!-- Results -->
+    <section class="mb-12">
+      <h3 class="text-2xl font-semibold mb-4">Results</h3>
+      <p>
+        The pipeline successfully processed millions of rows with improved performance, 
+        storing them in a relational database for analytics and reporting.
+      </p>
+    </section>
+
+    <!-- Links -->
+    <section class="mb-12">
+      <a href="https://github.com/nuelwhite/sample-project" target="_blank" 
+         class="text-blue-600 hover:underline">View on GitHub</a>
+    </section>
+
+    <!-- Back link -->
+    <div class="text-center">
+      <a href="../index.html" class="text-blue-600 hover:underline">← Back to Projects</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 text-center py-6">
+    <p>&copy; <span id="year"></span> Emmanuel Agu-White. All rights reserved.</p>
+  </footer>
+
+  <!-- scripts -->
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
