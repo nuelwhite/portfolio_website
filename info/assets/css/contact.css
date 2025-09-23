@@ -1,0 +1,65 @@
+/* contact.css */
+
+/* Ensure font consistency */
+body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Fade-in animation for the whole page */
+  main {
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Form styling */
+  form {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  form:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  }
+  
+  /* Inputs and textarea */
+  input, textarea {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #2563eb; /* Tailwind blue-600 */
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
+    outline: none;
+  }
+  
+  /* Submit button enhancement */
+  button[type="submit"] {
+    transition: all 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    transform: translateY(-2px);
+  }
+  
+  /* Contact info links */
+  ul li a {
+    display: inline-block;
+    padding: 4px 0;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  ul li a:hover {
+    color: #2563eb;
+    transform: translateX(3px);
+  }
+  
+  /* Footer consistency */
+  footer {
+    font-size: 0.9rem;
+    color: #6b7280;
+  }
+  
