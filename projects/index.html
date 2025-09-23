@@ -54,32 +54,105 @@
 
     <!-- Projects Section -->
     <main class="container mx-auto px-6 pt-32 pb-16 flex-grow">
-    <h2 class="text-3xl font-bold mb-10 text-center">Projects</h2>
+        <h2 class="text-3xl font-bold mb-10 text-center">My Projects</h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+            Explore my portfolio of data engineering and analysis projects, showcasing skills in ETL pipelines, 
+            data visualization, and scalable data processing solutions.
+        </p>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Project Card -->
-      <div class="project-card bg-white rounded-lg shadow p-6">
-        <img src="https://placehold.co/600x400/D1D5DB/1F2937?text=Project+Thumbnail" alt="Project screenshot" class="rounded mb-4">
-        <h3 class="text-xl font-semibold mb-2">Data Pipeline with Spark</h3>
-        <p class="text-sm text-gray-500 mb-3">ETL • Apache Spark • PostgreSQL</p>
-        <p class="text-gray-600 mb-4">A data pipeline project demonstrating ingestion, transformation, and loading into a relational database.</p>
-        <div class="flex space-x-4">
-          <a href="#" class="text-blue-600 hover:underline">GitHub →</a>
-          <a href="#" class="text-blue-600 hover:underline">Live Demo →</a>
-        </div>
-      </div>
+        <!-- Data Engineering Projects -->
+        <section class="mb-16">
+            <h3 class="text-2xl font-bold mb-6 text-center">Data Engineering Projects</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- ETL Pipeline Project -->
+                <div class="project-card bg-white rounded-lg shadow p-6">
+                    <img src="https://placehold.co/600x400/D1D5DB/1F2937?text=ETL+Pipeline" alt="ETL Pipeline Architecture" class="rounded mb-4">
+                    <h4 class="text-xl font-semibold mb-2">ETL Pipeline with Spark & PostgreSQL</h4>
+                    <p class="text-sm text-gray-500 mb-3">ETL • Apache Spark • PostgreSQL • Docker</p>
+                    <p class="text-gray-600 mb-4">A scalable data pipeline demonstrating ingestion, transformation, and loading of large datasets into a relational database.</p>
+                    <div class="flex space-x-4">
+                        <a href="data-engineering/project1.html" class="text-blue-600 hover:underline">View Project →</a>
+                        <a href="https://github.com/nuelwhite/spark-etl-pipeline" target="_blank" class="text-blue-600 hover:underline">GitHub →</a>
+                    </div>
+                </div>
 
-      <div class="project-card bg-white rounded-lg shadow p-6">
-        <img src="https://placehold.co/600x400/D1D5DB/1F2937?text=Project+Thumbnail" alt="Project screenshot" class="rounded mb-4">
-        <h3 class="text-xl font-semibold mb-2">Memory Efficient Pandas</h3>
-        <p class="text-sm text-gray-500 mb-3">Python • Pandas • Data Analysis</p>
-        <p class="text-gray-600 mb-4">Portfolio project showcasing chunked CSV reading and memory usage optimization.</p>
-        <div class="flex space-x-4">
-          <a href="#" class="text-blue-600 hover:underline">GitHub →</a>
-          <a href="#" class="text-blue-600 hover:underline">Read Blog →</a>
-        </div>
-      </div>
-    </div>
+                <!-- Real-time Streaming Project -->
+                <div class="project-card bg-white rounded-lg shadow p-6">
+                    <img src="https://placehold.co/600x400/D1D5DB/1F2937?text=Streaming+Data" alt="Real-time Streaming Architecture" class="rounded mb-4">
+                    <h4 class="text-xl font-semibold mb-2">Real-time Data Streaming</h4>
+                    <p class="text-sm text-gray-500 mb-3">Kafka • Spark Streaming • Cassandra</p>
+                    <p class="text-gray-600 mb-4">Real-time data processing pipeline using Apache Kafka and Spark Streaming for high-throughput data ingestion.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-blue-600 hover:underline">Coming Soon →</a>
+                        <a href="https://github.com/nuelwhite" target="_blank" class="text-blue-600 hover:underline">GitHub →</a>
+                    </div>
+                </div>
+
+                <!-- Data Warehouse Project -->
+                <div class="project-card bg-white rounded-lg shadow p-6">
+                    <img src="https://placehold.co/600x400/D1D5DB/1F2937?text=Data+Warehouse" alt="Data Warehouse Architecture" class="rounded mb-4">
+                    <h4 class="text-xl font-semibold mb-2">Cloud Data Warehouse</h4>
+                    <p class="text-sm text-gray-500 mb-3">AWS • Redshift • Airflow • Python</p>
+                    <p class="text-gray-600 mb-4">Cloud-based data warehouse solution with automated ETL workflows and data quality monitoring.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-blue-600 hover:underline">Coming Soon →</a>
+                        <a href="https://github.com/nuelwhite" target="_blank" class="text-blue-600 hover:underline">GitHub →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Analysis Projects -->
+        <section class="mb-16">
+            <h3 class="text-2xl font-bold mb-6 text-center">Data Analysis Projects</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Sales Dashboard Project -->
+                <div class="project-card bg-white rounded-lg shadow p-6">
+                    <img src="https://placehold.co/600x400/D1D5DB/1F2937?text=Sales+Dashboard" alt="Sales Analytics Dashboard" class="rounded mb-4">
+                    <h4 class="text-xl font-semibold mb-2">Sales Analytics Dashboard</h4>
+                    <p class="text-sm text-gray-500 mb-3">Python • Pandas • Matplotlib • SQL</p>
+                    <p class="text-gray-600 mb-4">Interactive dashboard analyzing sales trends, customer behavior, and revenue patterns with actionable insights.</p>
+                    <div class="flex space-x-4">
+                        <a href="data-analysis/project1.html" class="text-blue-600 hover:underline">View Project →</a>
+                        <a href="https://github.com/nuelwhite/sales-dashboard" target="_blank" class="text-blue-600 hover:underline">GitHub →</a>
+                    </div>
+                </div>
+
+                <!-- Memory Efficient Pandas Project -->
+                <div class="project-card bg-white rounded-lg shadow p-6">
+                    <img src="https://placehold.co/600x400/D1D5DB/1F2937?text=Pandas+Optimization" alt="Pandas Memory Optimization" class="rounded mb-4">
+                    <h4 class="text-xl font-semibold mb-2">Memory Efficient Pandas</h4>
+                    <p class="text-sm text-gray-500 mb-3">Python • Pandas • Data Analysis • Optimization</p>
+                    <p class="text-gray-600 mb-4">Portfolio project showcasing chunked CSV reading and memory usage optimization techniques for large datasets.</p>
+                    <div class="flex space-x-4">
+                        <a href="../blogs/posts/blog-2.html" class="text-blue-600 hover:underline">Read Blog →</a>
+                        <a href="https://github.com/nuelwhite/pandas-optimization" target="_blank" class="text-blue-600 hover:underline">GitHub →</a>
+                    </div>
+                </div>
+
+                <!-- Customer Segmentation Project -->
+                <div class="project-card bg-white rounded-lg shadow p-6">
+                    <img src="https://placehold.co/600x400/D1D5DB/1F2937?text=Customer+Segmentation" alt="Customer Segmentation Analysis" class="rounded mb-4">
+                    <h4 class="text-xl font-semibold mb-2">Customer Segmentation Analysis</h4>
+                    <p class="text-sm text-gray-500 mb-3">Python • Scikit-learn • Clustering • Visualization</p>
+                    <p class="text-gray-600 mb-4">Machine learning project using clustering algorithms to segment customers and identify key behavioral patterns.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-blue-600 hover:underline">Coming Soon →</a>
+                        <a href="https://github.com/nuelwhite" target="_blank" class="text-blue-600 hover:underline">GitHub →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="text-center bg-gray-100 rounded-lg p-8">
+            <h3 class="text-2xl font-bold mb-4">Interested in My Work?</h3>
+            <p class="text-gray-600 mb-6">I'm always open to discussing new opportunities and interesting projects.</p>
+            <div class="space-x-4">
+                <a href="../info/contact.html" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Get in Touch</a>
+                <a href="../assets/Emmanuel_Agu-White_resume.pdf" target="_blank" class="border border-blue-600 text-blue-600 px-6 py-3 rounded hover:bg-blue-600 hover:text-white">View Resume</a>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
