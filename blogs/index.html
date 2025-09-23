@@ -4,9 +4,9 @@
         <!-- Meta data -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="About Emmanuel Agu-White Narhteh - Data Engineer & Analyst, IT Support professional">
-        <meta property="og:title" content="About Emmanuel Agu-White Narhteh">
-        <meta property="og:description" content="About Emmanuel Agu-White Narhteh - Data Engineer & Analyst, IT Support professional">
+        <meta name="description" content="Blog posts by Emmanuel Agu-White Narhteh - Data Engineering, Analytics, and IT insights">
+        <meta property="og:title" content="Blogs - Emmanuel Agu-White Narhteh">
+        <meta property="og:description" content="Blog posts by Emmanuel Agu-White Narhteh - Data Engineering, Analytics, and IT insights">
         <meta property="og:image" content="../assets/images/og-image.png">
         <meta property="og:type" content="website">
     
@@ -24,7 +24,79 @@
         <!-- About page css -->
         <link rel="stylesheet" href="assets/css/blogs.css">
 </head>
-<body>
-    
+<body class="bg-gray-50 text-gray-500">
+     <!-- Navigation bar -->
+     <header class="bg-white shadow fixed w-full z-10">
+        <div class="container mx-auto flex justify-between items-center py-4 py-6">
+            <h1 class="text-2xl font-bold">Emmanuel Agu-White Narhteh</h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="../index.html" class="hover:text-blue-600">Home</a>
+                <a href="../info/about.html" class="hover:text-blue-600">About</a>
+                <a href="../projects/index.html" class="hover:text-blue-600">Projects</a>
+                <a href="index.html" class="hover:text-blue-600">Blogs</a>
+                <a href="../info/contact.html" class="hover:text-blue-600">Contact</a>
+                <a href="../assets/Emmanuel_Agu-White_resume.pdf" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Resume</a>
+            </nav>
+            
+            <!-- menu button -->
+            <button id="menu-btn" class="md:hidden focus:outline-none" aria-label="Open menu">☰</button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow">
+            <nav class="flex flex-col p-4 space-y-2">
+                <a href="../index.html" class="hover:text-blue-600">Home</a>
+                <a href="../info/about.html" class="hover:text-blue-600">About</a>
+                <a href="../projects/index.html" class="hover:text-blue-600">Projects</a>
+                <a href="index.html" class="hover:text-blue-600">Blogs</a>
+                <a href="../info/contact.html" class="hover:text-blue-600">Contact</a>
+                <a href="../assets/Emmanuel_Agu-White_resume.pdf" target="_blank" class="hover:text-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Resume</a>
+            </nav>
+        </div>
+     </header>
+
+      <!-- Blogs Section -->
+  <main class="container mx-auto px-6 pt-32 pb-16 flex-grow">
+    <h2 class="text-3xl font-bold mb-10 text-center">My Blogs</h2>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Blog Card -->
+      <article class="bg-white rounded-lg shadow hover:shadow-lg transition p-6">
+        <h3 class="text-xl font-semibold mb-2">
+          <a href="posts/blog-1.html" class="hover:text-blue-600">Getting Started with Spark RDDs</a>
+        </h3>
+        <p class="text-sm text-gray-500 mb-4">September 2025 • Data Engineering</p>
+        <p class="text-gray-600">A beginner-friendly introduction to Spark’s Resilient Distributed Datasets (RDDs), with examples and use cases...</p>
+        <a href="posts/blog-1.html" class="text-blue-600 hover:underline mt-4 inline-block">Read More →</a>
+      </article>
+
+      <article class="bg-white rounded-lg shadow hover:shadow-lg transition p-6">
+        <h3 class="text-xl font-semibold mb-2">
+          <a href="posts/blog-2.html" class="hover:text-blue-600">Memory-Efficient Data Loading in Pandas</a>
+        </h3>
+        <p class="text-sm text-gray-500 mb-4">August 2025 • Data Analytics</p>
+        <p class="text-gray-600">Learn how to use chunked reading in Pandas to optimize memory usage when handling large datasets...</p>
+        <a href="posts/blog-2.html" class="text-blue-600 hover:underline mt-4 inline-block">Read More →</a>
+      </article>
+
+      <article class="bg-white rounded-lg shadow hover:shadow-lg transition p-6">
+        <h3 class="text-xl font-semibold mb-2">
+          <a href="posts/blog-3.html" class="hover:text-blue-600">SQL Tips for Analysts</a>
+        </h3>
+        <p class="text-sm text-gray-500 mb-4">July 2025 • SQL</p>
+        <p class="text-gray-600">Handy SQL tricks for data analysts — from window functions to query optimization...</p>
+        <a href="posts/blog-3.html" class="text-blue-600 hover:underline mt-4 inline-block">Read More →</a>
+      </article>
+    </div>
+  </main>
+
+      <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 text-center py-6">
+        <p>
+            &copy; <span id="year"></span> Emmanuel Agu-White. All rights reserved.
+        </p>
+    </footer>
+
+    <!-- scripts -->
+    <script src="../assets/js/main.js"></script>
+     
 </body>
 </html>
