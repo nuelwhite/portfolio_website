@@ -1,0 +1,54 @@
+/* blogs.css */
+
+/* Ensure consistent font family with homepage */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Navbar consistency with homepage */
+nav a {
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+/* Smooth fade-in for the main blog grid */
+main {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Blog card hover effects - consistent with homepage card styling */
+article {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog links */
+article a {
+    transition: color 0.3s ease;
+}
+article a:hover {
+    color: #2563eb; /* Tailwind blue-600 */
+}
+
+/* Blog meta text (date + category) */
+article p.text-sm {
+    font-style: italic;
+    color: #6b7280; /* gray-500 */
+}
+
+/* Footer consistency with homepage */
+footer {
+    font-size: 0.9rem;
+    color: #6b7280;
+}
