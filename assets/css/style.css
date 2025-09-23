@@ -2,9 +2,15 @@
 
 /* Base overrides */
 
-body{
+html, body {
+    height: 100%;
     font-family: 'Inter', sans-serif;
     background-color: #f9fafb;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Navbar */
@@ -40,4 +46,5 @@ nav a:hover{
 footer {
     font-size: 0.9rem;
     color: #6b7280;
+    margin-top: auto;
 }
