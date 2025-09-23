@@ -115,4 +115,10 @@ section .bg-white {
     box-shadow: 0 12px 24px rgba(0,0,0,0.1);
   }
 
+  #timeline-modal a.bg-blue-600 {
+    transition: all 0.3s ease;
+  }
+  #timeline-modal a.bg-blue-600:hover {
+    transform: translateY(-2px);
+  }
   

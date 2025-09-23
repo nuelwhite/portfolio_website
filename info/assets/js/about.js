@@ -172,3 +172,11 @@ const certData = {
     }
   });
   
+  previews.forEach(preview => {
+    preview.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+      const index = parseInt(preview.dataset.index, 10);
+      showModalCard(index);   // immediately load card content
+      stopCarousel();         // stop autoplay when modal is open
+    });
+  });
