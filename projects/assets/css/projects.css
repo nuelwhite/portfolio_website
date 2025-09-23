@@ -1,0 +1,70 @@
+/* Projects Page Styles */
+
+/* Ensure consistent font family with homepage */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Navbar consistency with homepage */
+nav a {
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+/* Smooth fade-in for the main projects grid */
+main {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Project card hover effects - consistent with homepage card styling */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Project image */
+.project-card img {
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.03);
+}
+
+/* Project title */
+.project-card h3 {
+    transition: color 0.3s ease;
+}
+
+.project-card h3:hover {
+    color: #2563eb; /* Tailwind blue-600 */
+}
+
+/* Buttons/links inside cards */
+.project-card a {
+    transition: color 0.2s ease;
+}
+
+.project-card a:hover {
+    color: #1d4ed8; /* Tailwind blue-700 */
+    text-decoration: underline;
+}
+
+/* Footer consistency with homepage */
+footer {
+    font-size: 0.9rem;
+    color: #6b7280;
+}
