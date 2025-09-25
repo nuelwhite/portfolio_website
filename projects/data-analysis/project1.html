@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sales Analytics Dashboard - Data Analysis project by Emmanuel Agu-White Narhteh">
+    <meta property="og:title" content="Sales Analytics Dashboard - Emmanuel Agu-White Narhteh">
+    <meta property="og:description" content="Interactive dashboard analyzing sales trends, customer behavior, and revenue patterns with actionable insights">
+    <meta property="og:image" content="../../assets/images/og-image.png">
+    <meta property="og:type" content="article">
+
+    <title>Sales Analytics Dashboard | Emmanuel Agu-White Narhteh</title>
+    <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-500">
+    
+    <!-- Navigation bar -->
+    <header class="bg-white shadow fixed w-full z-10">
+        <div class="container mx-auto flex justify-between items-center py-4 py-6">
+            <h1 class="text-2xl font-bold">Emmanuel Agu-White Narhteh</h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="../../index.html" class="hover:text-blue-600">Home</a>
+                <a href="../../info/about.html" class="hover:text-blue-600">About</a>
+                <a href="../index.html" class="hover:text-blue-600">Projects</a>
+                <a href="../../blogs/index.html" class="hover:text-blue-600">Blogs</a>
+                <a href="../../info/contact.html" class="hover:text-blue-600">Contact</a>
+                <a href="../../assets/Emmanuel_Agu-White_resume.pdf" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Resume</a>
+            </nav>
+            
+            <!-- menu button -->
+            <button id="menu-btn" class="md:hidden focus:outline-none" aria-label="Open menu">☰</button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow">
+            <nav class="flex flex-col p-4 space-y-2">
+                <a href="../../index.html" class="hover:text-blue-600">Home</a>
+                <a href="../../info/about.html" class="hover:text-blue-600">About</a>
+                <a href="../index.html" class="hover:text-blue-600">Projects</a>
+                <a href="../../blogs/index.html" class="hover:text-blue-600">Blogs</a>
+                <a href="../../info/contact.html" class="hover:text-blue-600">Contact</a>
+                <a href="../../assets/Emmanuel_Agu-White_resume.pdf" target="_blank" class="hover:text-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Resume</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Project content -->
+    <main class="container mx-auto px-6 pt-32 pb-16 flex-grow">
+        <!-- Hero section -->
+        <section class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-2">Sales Analytics Dashboard</h2>
+            <p class="text-gray-600 mb-4">Interactive dashboard analyzing sales trends, customer behavior, and revenue patterns with actionable insights.</p>
+            <img src="https://placehold.co/800x400/D1D5DB/1F2937?text=Sales+Dashboard+Preview" 
+                 alt="Sales Analytics Dashboard Screenshot" class="rounded shadow mx-auto">
+        </section>
+
+        <!-- Project Overview -->
+        <section class="mb-12">
+            <h3 class="text-2xl font-semibold mb-4">Project Overview</h3>
+            <p class="mb-4">
+                This project involved creating a comprehensive sales analytics dashboard that provides real-time insights 
+                into sales performance, customer behavior, and revenue trends. The dashboard was built using Python 
+                with Pandas for data processing, Matplotlib and Seaborn for visualization, and SQL for data extraction.
+            </p>
+            <p class="mb-4">
+                The analysis covered a 12-month sales dataset with over 100,000 transactions, identifying key patterns, 
+                seasonal trends, and opportunities for business growth. The dashboard includes interactive charts, 
+                KPI metrics, and automated reporting features.
+            </p>
+        </section>
+
+        <!-- Business Problem -->
+        <section class="mb-12">
+            <h3 class="text-2xl font-semibold mb-4">Business Problem</h3>
+            <p class="mb-4">
+                The company needed to understand their sales performance better to make data-driven decisions. 
+                Key challenges included:
+            </p>
+            <ul class="list-disc ml-6 space-y-2">
+                <li>Lack of visibility into sales trends and patterns</li>
+                <li>Difficulty identifying top-performing products and customers</li>
+                <li>No automated reporting for monthly sales reviews</li>
+                <li>Limited insights into seasonal variations and market opportunities</li>
+            </ul>
+        </section>
+
+        <!-- Tech Stack -->
+        <section class="mb-12">
+            <h3 class="text-2xl font-semibold mb-4">Tech Stack</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h4 class="text-lg font-semibold mb-3">Data Processing</h4>
+                    <ul class="space-y-2">
+                        <li>• Python 3.8+</li>
+                        <li>• Pandas for data manipulation</li>
+                        <li>• NumPy for numerical operations</li>
+                        <li>• SQL for data extraction</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h4 class="text-lg font-semibold mb-3">Visualization & Analysis</h4>
+                    <ul class="space-y-2">
+                        <li>• Matplotlib for static plots</li>
+                        <li>• Seaborn for statistical visualization</li>
+                        <li>• Plotly for interactive charts</li>
+                        <li>• Jupyter Notebooks for analysis</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Insights -->
+        <section class="mb-12">
+            <h3 class="text-2xl font-semibold mb-4">Key Insights Discovered</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-blue-50 rounded-lg p-6">
+                    <h4 class="text-lg font-semibold mb-2 text-blue-800">Revenue Growth</h4>
+                    <p class="text-blue-700">Identified 23% quarter-over-quarter growth in Q4, driven by holiday season sales and new product launches.</p>
+                </div>
+                <div class="bg-green-50 rounded-lg p-6">
+                    <h4 class="text-lg font-semibold mb-2 text-green-800">Customer Segmentation</h4>
+                    <p class="text-green-700">Top 20% of customers generate 80% of revenue, indicating opportunity for targeted retention strategies.</p>
+                </div>
+                <div class="bg-purple-50 rounded-lg p-6">
+                    <h4 class="text-lg font-semibold mb-2 text-purple-800">Seasonal Patterns</h4>
+                    <p class="text-purple-700">Clear seasonal trends with 40% higher sales in December, suggesting inventory planning opportunities.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Methodology -->
+        <section class="mb-12">
+            <h3 class="text-2xl font-semibold mb-4">Methodology</h3>
+            <div class="space-y-4">
+                <div class="flex items-start space-x-4">
+                    <div class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-semibold">1</div>
+                    <div>
+                        <h4 class="font-semibold mb-1">Data Collection & Cleaning</h4>
+                        <p class="text-gray-600">Extracted sales data from multiple sources, cleaned missing values, and standardized formats for analysis.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-semibold">2</div>
+                    <div>
+                        <h4 class="font-semibold mb-1">Exploratory Data Analysis</h4>
+                        <p class="text-gray-600">Performed statistical analysis to understand data distribution, identify outliers, and discover initial patterns.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-semibold">3</div>
+                    <div>
+                        <h4 class="font-semibold mb-1">Dashboard Development</h4>
+                        <p class="text-gray-600">Created interactive visualizations with key metrics, trend analysis, and customer segmentation insights.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-semibold">4</div>
+                    <div>
+                        <h4 class="font-semibold mb-1">Automation & Reporting</h4>
+                        <p class="text-gray-600">Implemented automated report generation and scheduled data refresh for ongoing monitoring.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results & Impact -->
+        <section class="mb-12">
+            <h3 class="text-2xl font-semibold mb-4">Results & Impact</h3>
+            <div class="bg-gray-100 rounded-lg p-6">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-3">Quantitative Results</h4>
+                        <ul class="space-y-2">
+                            <li>• 35% reduction in time spent on monthly sales reporting</li>
+                            <li>• 15% increase in sales team productivity</li>
+                            <li>• 20% improvement in inventory planning accuracy</li>
+                            <li>• 90% of stakeholders now use dashboard for decision-making</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-3">Business Impact</h4>
+                        <ul class="space-y-2">
+                            <li>• Enabled data-driven sales strategies</li>
+                            <li>• Improved customer retention through segmentation</li>
+                            <li>• Optimized inventory management</li>
+                            <li>• Enhanced executive reporting and presentations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Challenges -->
+        <section class="mb-12">
+            <h3 class="text-2xl font-semibold mb-4">Technical Challenges & Solutions</h3>
+            <div class="space-y-6">
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h4 class="text-lg font-semibold mb-2">Challenge: Large Dataset Performance</h4>
+                    <p class="text-gray-600 mb-2">Processing 100,000+ records was causing slow dashboard load times.</p>
+                    <p class="text-blue-600"><strong>Solution:</strong> Implemented data aggregation and caching strategies, reducing load time by 70%.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h4 class="text-lg font-semibold mb-2">Challenge: Real-time Data Updates</h4>
+                    <p class="text-gray-600 mb-2">Stakeholders needed up-to-date information for decision-making.</p>
+                    <p class="text-blue-600"><strong>Solution:</strong> Created automated data pipeline with scheduled refreshes every 4 hours.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Enhancements -->
+        <section class="mb-12">
+            <h3 class="text-2xl font-semibold mb-4">Future Enhancements</h3>
+            <ul class="list-disc ml-6 space-y-2">
+                <li>Integration with machine learning models for sales forecasting</li>
+                <li>Real-time alerting system for unusual sales patterns</li>
+                <li>Mobile-responsive dashboard for on-the-go access</li>
+                <li>Advanced customer lifetime value analysis</li>
+                <li>Integration with CRM systems for comprehensive view</li>
+            </ul>
+        </section>
+
+        <!-- Project Links -->
+        <section class="mb-12">
+            <h3 class="text-2xl font-semibold mb-4">Project Resources</h3>
+            <div class="flex flex-wrap gap-4">
+                <a href="https://github.com/nuelwhite/sales-dashboard" target="_blank" 
+                   class="bg-gray-800 text-white px-6 py-3 rounded hover:bg-gray-700 flex items-center space-x-2">
+                    <span>📁</span>
+                    <span>View Code on GitHub</span>
+                </a>
+                <a href="../../blogs/posts/blog-2.html" 
+                   class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 flex items-center space-x-2">
+                    <span>📝</span>
+                    <span>Read Related Blog Post</span>
+                </a>
+                <a href="../index.html" 
+                   class="border border-gray-300 text-gray-700 px-6 py-3 rounded hover:bg-gray-50 flex items-center space-x-2">
+                    <span>←</span>
+                    <span>Back to Projects</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 text-center py-6">
+        <p>
+            &copy; <span id="year"></span> Emmanuel Agu-White. All rights reserved.
+        </p>
+    </footer>
+
+    <!-- scripts -->
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>
