@@ -52,3 +52,67 @@ footer {
     font-size: 0.9rem;
     color: #6b7280;
 }
+
+/* Typography enhancements for blog content */
+.prose {
+    line-height: 1.75;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.prose h2 {
+    font-size: 1.875rem;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+}
+
+.prose h3 {
+    font-size: 1.5rem;
+}
+
+.prose h4 {
+    font-size: 1.25rem;
+}
+
+.prose ul, .prose ol {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+.prose li {
+    margin-bottom: 0.5rem;
+}
+
+.prose p {
+    margin-bottom: 1rem;
+}
+
+.prose pre {
+    margin: 1.5rem 0;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+}
+
+.prose code {
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.prose pre code {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.prose blockquote {
+    border-left: 4px solid #2563eb;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: #4b5563;
+}
