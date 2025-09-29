@@ -18,3 +18,4 @@ My project is structured simply:
 - at the core is ```index.html``` - the homepage
 - various tabs of the page (about, contact, projects, blogs) all under seperately grouped in respective directories
 
+you can follow this link to check out my website: https://nuelwhite.github.io/portfolio_website
