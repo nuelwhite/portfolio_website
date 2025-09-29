@@ -19,3 +19,7 @@ My project is structured simply:
 - various tabs of the page (about, contact, projects, blogs) all under seperately grouped in respective directories
 
 you can follow this link to check out my website: https://nuelwhite.github.io/portfolio_website
+
+
+#### PS: 
+I will be updating the website intermittently. This is only the schematics i developed. I will be populating and updating it with time
