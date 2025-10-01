@@ -14,25 +14,9 @@ Tailwind was the last CSS framework I understood better before the hiatus, so be
 
 ## Project Structure
 
-+-----------------------------------+
-|  E-commerce Event Simulation Script|
-|   (Generates raw streaming events) |
-+-----------------------------------+
-                |
-                v
-+-----------------------------------+
-| PySpark Stream Script              |
-| - Reads incoming events            |
-| - Applies transformations/filters  |
-+-----------------------------------+
-                |
-                v
-+-----------------------------------+
-| Postgres Sink                      |
-| - Stores processed event data      |
-| - Queryable for analytics          |
-+-----------------------------------+
-
+My project is structured simply:
+- at the core is ```index.html``` - the homepage
+- various tabs of the page (about, contact, projects, blogs) all under seperately grouped in respective directories
 
 you can follow this link to check out my website: https://nuelwhite.github.io/portfolio_website
 
